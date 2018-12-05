@@ -41,7 +41,7 @@ cc_test(
     copts = ABSL_TEST_COPTS,
     deps = [
         ":compressed_tuple",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -69,7 +69,7 @@ cc_test(
         "//absl/base:exception_testing",
         "//absl/hash:hash_testing",
         "//absl/memory",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -82,7 +82,7 @@ cc_test(
         "//absl/base:exception_testing",
         "//absl/hash:hash_testing",
         "//absl/memory",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -94,7 +94,7 @@ cc_test(
     deps = [
         ":fixed_array",
         "//absl/base:exception_safety_testing",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -105,7 +105,7 @@ cc_test(
     tags = ["benchmark"],
     deps = [
         ":fixed_array",
-        "@com_github_google_benchmark//:benchmark_main",
+        "@logi//third_party/cc/benchmark:benchmark_main",
     ],
 )
 
@@ -135,7 +135,7 @@ cc_test(
         "//absl/hash:hash_testing",
         "//absl/memory",
         "//absl/strings",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -152,7 +152,7 @@ cc_test(
         "//absl/hash:hash_testing",
         "//absl/memory",
         "//absl/strings",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -165,7 +165,7 @@ cc_test(
         ":inlined_vector",
         "//absl/base",
         "//absl/strings",
-        "@com_github_google_benchmark//:benchmark_main",
+        "@logi//third_party/cc/benchmark:benchmark_main",
     ],
 )
 
@@ -186,7 +186,7 @@ cc_test(
     copts = ABSL_TEST_COPTS,
     deps = [
         ":test_instance_tracker",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -229,7 +229,7 @@ cc_test(
         ":unordered_map_lookup_test",
         ":unordered_map_modifiers_test",
         "//absl/types:any",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -260,7 +260,7 @@ cc_test(
         ":unordered_set_modifiers_test",
         "//absl/memory",
         "//absl/strings",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -290,7 +290,7 @@ cc_test(
         ":unordered_map_constructor_test",
         ":unordered_map_lookup_test",
         ":unordered_map_modifiers_test",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -318,7 +318,7 @@ cc_test(
         ":unordered_set_constructor_test",
         ":unordered_set_lookup_test",
         ":unordered_set_modifiers_test",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -340,7 +340,7 @@ cc_test(
     deps = [
         ":container_memory",
         "//absl/strings",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -364,7 +364,7 @@ cc_test(
         ":hash_function_defaults",
         "//absl/hash",
         "//absl/strings",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -398,7 +398,7 @@ cc_test(
     copts = ABSL_TEST_COPTS,
     deps = [
         ":hash_policy_testing",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -415,7 +415,7 @@ cc_test(
     copts = ABSL_TEST_COPTS,
     deps = [
         ":hash_policy_traits",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -447,7 +447,7 @@ cc_test(
     deps = [
         ":hash_policy_traits",
         ":node_hash_policy",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -498,7 +498,7 @@ cc_test(
         "//absl/base",
         "//absl/base:core_headers",
         "//absl/strings",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -511,7 +511,7 @@ cc_test(
         ":raw_hash_set",
         ":tracked",
         "//absl/base:core_headers",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -540,7 +540,7 @@ cc_test(
         "//absl/base",
         "//absl/base:core_headers",
         "//absl/types:span",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -559,7 +559,7 @@ cc_library(
     deps = [
         ":hash_generator_testing",
         ":hash_policy_testing",
-        "@com_google_googletest//:gtest",
+        "@logi//third_party/cc/gtest:gtest",
     ],
 )
 
@@ -571,7 +571,7 @@ cc_library(
     deps = [
         ":hash_generator_testing",
         ":hash_policy_testing",
-        "@com_google_googletest//:gtest",
+        "@logi//third_party/cc/gtest:gtest",
     ],
 )
 
@@ -583,7 +583,7 @@ cc_library(
     deps = [
         ":hash_generator_testing",
         ":hash_policy_testing",
-        "@com_google_googletest//:gtest",
+        "@logi//third_party/cc/gtest:gtest",
     ],
 )
 
@@ -595,7 +595,7 @@ cc_library(
     deps = [
         ":hash_generator_testing",
         ":hash_policy_testing",
-        "@com_google_googletest//:gtest",
+        "@logi//third_party/cc/gtest:gtest",
     ],
 )
 
@@ -607,7 +607,7 @@ cc_library(
     deps = [
         ":hash_generator_testing",
         ":hash_policy_testing",
-        "@com_google_googletest//:gtest",
+        "@logi//third_party/cc/gtest:gtest",
     ],
 )
 
@@ -619,7 +619,7 @@ cc_library(
     deps = [
         ":hash_generator_testing",
         ":hash_policy_testing",
-        "@com_google_googletest//:gtest",
+        "@logi//third_party/cc/gtest:gtest",
     ],
 )
 
@@ -632,7 +632,7 @@ cc_test(
         ":unordered_set_constructor_test",
         ":unordered_set_lookup_test",
         ":unordered_set_modifiers_test",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -645,6 +645,6 @@ cc_test(
         ":unordered_map_constructor_test",
         ":unordered_map_lookup_test",
         ":unordered_map_modifiers_test",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )

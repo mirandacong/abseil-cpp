@@ -158,7 +158,7 @@ cc_test(
     deps = [
         ":base",
         ":core_headers",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -172,7 +172,7 @@ cc_test(
     deps = [
         ":base",
         ":core_headers",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -198,7 +198,7 @@ cc_test(
     linkopts = ABSL_EXCEPTIONS_FLAG_LINKOPTS,
     deps = [
         ":throw_delegate",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -212,7 +212,7 @@ cc_library(
     ],
     deps = [
         ":config",
-        "@com_google_googletest//:gtest",
+        "@logi//third_party/cc/gtest:gtest",
     ],
 )
 
@@ -237,7 +237,7 @@ cc_library(
         "//absl/meta:type_traits",
         "//absl/strings",
         "//absl/utility",
-        "@com_google_googletest//:gtest",
+        "@logi//third_party/cc/gtest:gtest",
     ],
 )
 
@@ -249,7 +249,7 @@ cc_test(
     deps = [
         ":exception_safety_testing",
         "//absl/memory",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -265,7 +265,7 @@ cc_test(
     copts = ABSL_TEST_COPTS,
     deps = [
         ":base_internal",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -278,7 +278,7 @@ cc_test(
         ":base_internal",
         "//absl/memory",
         "//absl/strings",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -294,7 +294,7 @@ cc_library(
         ":core_headers",
         ":spinlock_wait",
         "//absl/synchronization",
-        "@com_google_googletest//:gtest",
+        "@logi//third_party/cc/gtest:gtest",
     ],
     alwayslink = 1,
 )
@@ -310,7 +310,7 @@ cc_test(
         ":core_headers",
         ":spinlock_wait",
         "//absl/synchronization",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -326,7 +326,7 @@ cc_library(
         ":base",
         ":base_internal",
         "//absl/synchronization",
-        "@com_github_google_benchmark//:benchmark_main",
+        "@logi//third_party/cc/benchmark:benchmark_main",
     ],
     alwayslink = 1,
 )
@@ -362,7 +362,7 @@ cc_test(
         ":base",
         ":config",
         ":endian",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -376,7 +376,7 @@ cc_test(
     deps = [
         ":config",
         "//absl/synchronization:thread_pool",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -391,7 +391,7 @@ cc_test(
         ":base",
         ":core_headers",
         "//absl/synchronization",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -402,7 +402,7 @@ cc_test(
     deps = [
         ":base",
         "//absl/strings",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -414,7 +414,7 @@ cc_test(
     deps = [
         ":base",
         "//absl/synchronization",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -447,7 +447,7 @@ cc_test(
         ":base",
         ":core_headers",
         "//absl/synchronization",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -460,7 +460,7 @@ cc_test(
     deps = [
         ":base",
         "//absl/synchronization",
-        "@com_github_google_benchmark//:benchmark_main",
+        "@logi//third_party/cc/benchmark:benchmark_main",
     ],
 )
 
@@ -480,6 +480,6 @@ cc_test(
     copts = ABSL_TEST_COPTS,
     deps = [
         ":bits",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )

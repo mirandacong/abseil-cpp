@@ -55,7 +55,7 @@ cc_library(
         "//absl/meta:type_traits",
         "//absl/strings",
         "//absl/types:variant",
-        "@com_google_googletest//:gtest",
+        "@logi//third_party/cc/gtest:gtest",
     ],
 )
 
@@ -71,7 +71,7 @@ cc_test(
         "//absl/hash:spy_hash_state",
         "//absl/meta:type_traits",
         "//absl/numeric:int128",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -108,6 +108,6 @@ cc_test(
     copts = ABSL_TEST_COPTS,
     deps = [
         ":city",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )

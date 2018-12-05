@@ -28,6 +28,6 @@ cc_test(
         "//absl/base:core_headers",
         "//absl/memory",
         "//absl/strings",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )

@@ -78,7 +78,7 @@ cc_test(
         "//absl/base:config",
         "//absl/base:exception_testing",
         "//absl/container:test_instance_tracker",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -95,7 +95,7 @@ cc_test(
         "//absl/base:config",
         "//absl/base:exception_testing",
         "//absl/container:test_instance_tracker",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -107,7 +107,7 @@ cc_test(
     deps = [
         ":any",
         "//absl/base:exception_safety_testing",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -138,7 +138,7 @@ cc_test(
         "//absl/container:inlined_vector",
         "//absl/hash:hash_testing",
         "//absl/strings",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -156,7 +156,7 @@ cc_test(
         "//absl/container:inlined_vector",
         "//absl/hash:hash_testing",
         "//absl/strings",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -213,7 +213,7 @@ cc_test(
         "//absl/base:config",
         "//absl/meta:type_traits",
         "//absl/strings",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -227,7 +227,7 @@ cc_test(
     deps = [
         ":optional",
         "//absl/base:exception_safety_testing",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -259,7 +259,7 @@ cc_test(
         "//absl/memory",
         "//absl/meta:type_traits",
         "//absl/strings",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -273,7 +273,7 @@ cc_test(
     deps = [
         ":variant",
         "//absl/utility",
-        "@com_github_google_benchmark//:benchmark_main",
+        "@logi//third_party/cc/benchmark:benchmark_main",
     ],
 )
 
@@ -290,6 +290,6 @@ cc_test(
         "//absl/base:config",
         "//absl/base:exception_safety_testing",
         "//absl/memory",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )

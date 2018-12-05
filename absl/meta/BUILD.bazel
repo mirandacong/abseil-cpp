@@ -24,6 +24,6 @@ cc_test(
     deps = [
         ":type_traits",
         "//absl/base:core_headers",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )

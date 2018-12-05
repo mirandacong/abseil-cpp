@@ -67,7 +67,7 @@ cc_library(
         ":time",
         "//absl/base",
         "//absl/time/internal/cctz:time_zone",
-        "@com_google_googletest//:gtest",
+        "@logi//third_party/cc/gtest:gtest",
     ],
 )
 
@@ -89,7 +89,7 @@ cc_test(
         "//absl/base:config",
         "//absl/base:core_headers",
         "//absl/time/internal/cctz:time_zone",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -111,6 +111,6 @@ cc_test(
         ":time",
         "//absl/base",
         "//absl/hash",
-        "@com_github_google_benchmark//:benchmark_main",
+        "@logi//third_party/cc/benchmark:benchmark_main",
     ],
 )

@@ -74,7 +74,7 @@ cc_test(
     srcs = ["src/civil_time_test.cc"],
     deps = [
         ":civil_time",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -91,7 +91,7 @@ cc_test(
     deps = [
         ":civil_time",
         ":time_zone",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -109,7 +109,7 @@ cc_test(
     deps = [
         ":civil_time",
         ":time_zone",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -129,7 +129,7 @@ cc_test(
     deps = [
         ":civil_time",
         ":time_zone",
-        "@com_github_google_benchmark//:benchmark_main",
+        "@logi//third_party/cc/benchmark:benchmark_main",
     ],
 )
 

@@ -94,7 +94,7 @@ cc_test(
     deps = [
         ":synchronization",
         "//absl/time",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -109,7 +109,7 @@ cc_test(
     deps = [
         ":synchronization",
         "//absl/time",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -122,7 +122,7 @@ cc_test(
         ":graphcycles_internal",
         "//absl/base",
         "//absl/base:core_headers",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -136,7 +136,7 @@ cc_test(
     deps = [
         ":graphcycles_internal",
         "//absl/base",
-        "@com_github_google_benchmark//:benchmark_main",
+        "@logi//third_party/cc/benchmark:benchmark_main",
     ],
 )
 
@@ -166,7 +166,7 @@ cc_test(
         "//absl/base:core_headers",
         "//absl/memory",
         "//absl/time",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -183,7 +183,7 @@ cc_library(
         ":thread_pool",
         "//absl/base",
         "//absl/base:base_internal",
-        "@com_github_google_benchmark//:benchmark_main",
+        "@logi//third_party/cc/benchmark:benchmark_main",
     ],
     alwayslink = 1,
 )
@@ -206,7 +206,7 @@ cc_test(
     deps = [
         ":synchronization",
         "//absl/time",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
@@ -220,7 +220,7 @@ cc_library(
         "//absl/base",
         "//absl/strings",
         "//absl/time",
-        "@com_google_googletest//:gtest",
+        "@logi//third_party/cc/gtest:gtest",
     ],
     alwayslink = 1,
 )
@@ -236,7 +236,7 @@ cc_test(
         "//absl/base",
         "//absl/strings",
         "//absl/time",
-        "@com_google_googletest//:gtest_main",
+        "@logi//third_party/cc/gtest:gtest_main",
     ],
 )
 
